@@ -1,6 +1,6 @@
 # TraceJudge
 
-A CLI that boosts large language model (LLM) confidence by explaining *why* an LLM answer may have failed, using retrieval receipts and hard rules.
+A CLI that boosts large language model (LLM) adoption confidence by exploring *why* an LLM answer may have failed, using retrieval receipts and hard rules.
 
 TraceJudge is built for corpora (local docs + embeddings) with strong containment boundaries and limits. It does not browse the web.
 If the answer is not supported by retrieved context, prompt responds accordingly.

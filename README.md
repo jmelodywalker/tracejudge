@@ -32,7 +32,7 @@ TraceJudge is a diagnoser:
 - When a model should have refused
 - When chunking / k / thresholds are the real cause
 
-## Failure Types (v1)
+## Classifiers (v1)
 
 - RETRIEVAL_EMPTY
 - RETRIEVAL_LOW_CONFIDENCE
@@ -73,12 +73,12 @@ CAUSE
 - Model answered anyway
 
 FIXES
-- Enforce "Not found in corpus." when evidence is missing
+- Enforce rules when evidence is missing
 - Raise minimum similarity threshold OR increase k
 - Add refusal template and answer gate
 
 EVIDENCE
-- docs/sample.md#chunk_6 (score=0.61): "If the answer is not in the provided documents, it must say: 'Not found in corpus.'"
+- docs/sample.md#chunk_6 (score=0.61): 
 
 ## Design principles
 	•	Rules > vibes

@@ -1,0 +1,30 @@
+{
+  "run_id": "run_0002_found",
+  "created_at": "2026-02-15T21:55:00-08:00",
+  "query": "What should it say if the answer is missing?",
+  "answer_text": "Not found in corpus",
+  "retrieval": {
+    "k": 5,
+    "index_name": "local-faiss",
+    "embedding_model": "unknown",
+    "notes": "Imported from retrieval_trace.json"
+  },
+  "sources": [
+    {
+      "rank": 1,
+      "source_id": "docs/sample.md",
+      "chunk_id": "6",
+      "chunk_index": 6,
+      "score": 1.1747,
+      "text": "Mini FAQ Q: What happens if the answer is missing? A: The system must not guess..."
+    },
+    {
+      "rank": 2,
+      "source_id": "docs/sample.md",
+      "chunk_id": "2",
+      "chunk_index": 2,
+      "score": 1.1876,
+      "text": "If the answer is not in the provided documents, it must say: \"Not found in corpus.\""
+    }
+  ]
+}

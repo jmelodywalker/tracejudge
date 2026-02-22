@@ -1,8 +1,8 @@
-# TraceJudge
+# TraceBench
 
 A CLI that boosts large language model (LLM) adoption confidence by exploring *why* an LLM answer may have not passes retrieval expectations, using a simple system of pass, fail or overlap.
 
-TraceJudge is built for corpora (local docs + embeddings) with strong containment boundaries. It does not browse the web.
+TraceBench is built for corpora (local docs + embeddings) with strong containment boundaries. It does not browse the web.
 If the answer is not supported by retrieved context, prompt responds accordingly.
 
 
@@ -13,7 +13,7 @@ Given:
 - retrieved chunks (with similarity scores + sources)
 - an optional model answer
 
-TraceJudge outputs:
+TraceBench outputs:
 - PASS/FAIL verdict
 - failure classification (retrieval gap, policy violation, unsupported answer, etc.)
 - likely cause (2–5 bullets)
@@ -25,7 +25,7 @@ TraceJudge outputs:
 Most demos show “RAG works”.
 Real systems fail.
 
-TraceJudge is a diagnoser:
+TraceBench is a diagnoser:
 - When retrieval is empty
 - When retrieval is weak
 - When an answer is unsupported
@@ -56,7 +56,7 @@ pip install -r requirements.txt
 
 1) Analyze retrieval-only (no model call)
 ```bash
-python tracejudge/run.py \
+python TraceBench/run.py \
   --question "What happens if the answer is missing?" \
   --retrieval_json sample_runs/retrieval.json \
   --answer_txt sample_runs/answer.txt

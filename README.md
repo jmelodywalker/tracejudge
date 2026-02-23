@@ -23,7 +23,6 @@ TraceBench outputs:
 ## Why
 
 Most demos show “RAG works”.
-Real systems fail.
 
 TraceBench is a diagnoser:
 - When retrieval is empty

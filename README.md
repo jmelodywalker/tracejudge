@@ -1,6 +1,6 @@
 # TraceBench
 
-A CLI that boosts large language model (LLM) adoption confidence by exploring *why* an LLM answer may have not passes retrieval expectations, using a simple system of pass, fail or overlap.
+A CLI that boosts large language model (LLM) adoption confidence by exploring why an LLM answer may have not passes retrieval expectations, using a simple system of pass, fail or overlap.
 
 TraceBench is built for corpora (local docs + embeddings) with strong containment boundaries. It does not browse the web.
 If the answer is not supported by retrieved context, prompt responds accordingly.
